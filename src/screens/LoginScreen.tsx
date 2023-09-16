@@ -66,6 +66,7 @@ const LoginScreen = () => {
         password,
       );
       const user = userCredential.user;
+      console.log('Signed user details: ' + user);
       setIsLoading(false);
       alert('Account Login successfully 🎉');
     } catch (error: any) {

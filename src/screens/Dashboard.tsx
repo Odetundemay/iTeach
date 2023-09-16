@@ -1,21 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { FIREBASE_AUTH, FIRESTORE_DB } from '../config/firebase';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { doc, getDoc } from 'firebase/firestore';
+import PageContainer from '../components/PageContainer';
 const Dashboard = () => {
   const [userInfo, setUserInfo] = useState<any>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
-  const handleSignout = async (): Promise<void> => {
-    try {
-      await FIREBASE_AUTH.signOut();
-    } catch (error) {
-      setError('Error signing out');
-    }
-  };
 
   useEffect(() => {
     const getUserDetails = async () => {
@@ -61,16 +53,12 @@ const Dashboard = () => {
           <Text>Error: {error}</Text>
         </View>
       ) : (
-        <View>
-          <Text>Dashboard</Text>
+        <PageContainer>
           <View>
+            <Text>Good morning,</Text>
             <Text>Welcome {userInfo?.Name}</Text>
-            <Text>Email: {userInfo?.Email}</Text>
-            <TouchableOpacity style={styles.button} onPress={handleSignout}>
-              <Text style={{ color: '#ffff', fontSize: 20 }}>Sign out</Text>
-            </TouchableOpacity>
           </View>
-        </View>
+        </PageContainer>
       )}
     </View>
   );

@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import PageContainer from '../components/PageContainer';
 
 const SchedulesScreen = () => {
   return (
-    <View>
+    <PageContainer>
       <Text>SchedulesScreen</Text>
-    </View>
+    </PageContainer>
   );
 };
 
