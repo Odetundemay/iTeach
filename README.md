@@ -1,7 +1,9 @@
-## Iteach - Complete React Native TUTOTING APP
+## Iteach - Complete React Native TUTORING APP
 iTeach Tutoring App is a comprehensive mobile application designed to transform the tutoring and learning experience within a community. This application facilitates seamless connections between students and tutors while fostering collaborative and personalized learning, all through an intuitive and user-friendly interface.
 
 ## Demo
+![Image Iteach 1](https://github.com/Odetundemay/iTeach/assets/88235457/c05a4039-87bc-4e1d-a603-33d6162b1441)
+
 
 ![Image chateo 1](https://i.ibb.co/7GDb1JW/chateo.png)
 ![Image chateo 2](https://i.ibb.co/QFpZXvW/chateo1.png)
