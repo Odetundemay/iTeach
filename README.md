@@ -3,8 +3,6 @@ iTeach Tutoring App is a comprehensive mobile application designed to transform 
 
 ## Demo
 ![Image Iteach 1](https://github.com/Odetundemay/iTeach/assets/88235457/c05a4039-87bc-4e1d-a603-33d6162b1441)
-![Image chateo 2](https://i.ibb.co/QFpZXvW/chateo1.png)
-![Image chateo 3](https://i.ibb.co/hXHy1mh/chateo2.png)
 
 
 ## Tech Stack
