@@ -2,11 +2,11 @@ import { StyleSheet } from 'react-native';
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Dashboard from '../screens/Dashboard';
+import TabNavigator from './TabNavigator';
 import SettingsScreen from '../screens/SettingsScreen';
 import InstructorScreen from '../screens/InstructorScreen';
 import SchedulesScreen from '../screens/SchedulesScreen';
 import CustomDrawer from '../components/CustomDrawer';
-import Icon from '@expo/vector-icons/AntDesign';
 import { AntDesign, Ionicons } from '@expo/vector-icons';
 
 const Drawer = createDrawerNavigator();
@@ -28,7 +28,7 @@ const AppStack = () => {
     >
       <Drawer.Screen
         name="Home"
-        component={Dashboard}
+        component={TabNavigator}
         options={{
           drawerIcon: ({ color }) => (
             <AntDesign name="home" size={24} color={color} /> // Return the Icon component here
