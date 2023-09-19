@@ -21,6 +21,7 @@ import NotificationScreen from '../screens/Settings/NotificationScreen';
 import MessagingCalling from '../screens/Settings/MessagingCalling';
 import AboutScreen from '../screens/Settings/AboutScreen';
 import AppPermission from '../screens/Settings/AppPermission';
+import BlockContactsScreen from '../screens/Settings/BlockContactsScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -39,6 +40,10 @@ const SettingsStack = () => {
       <Stack.Screen name="Messaging and Calling" component={MessagingCalling} />
       <Stack.Screen name="App Permission" component={AppPermission} />
       <Stack.Screen name="About" component={AboutScreen} />
+      <Stack.Screen
+        name="Messaging and Calling, Block contacts"
+        component={BlockContactsScreen}
+      />
     </Stack.Navigator>
   );
 };

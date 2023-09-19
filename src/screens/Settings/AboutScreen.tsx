@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
 import PageContainer from '../../components/PageContainer';
 
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '../../types/react-navigation';
 
 const AboutScreen = () => {
@@ -21,6 +21,24 @@ const AboutScreen = () => {
       <View style={styles.aboutContainer}>
         <Image source={require('../../../assets/images/logo2.png')} />
         <Image source={require('../../../assets/images/logoTxt.png')} />
+        <Text style={styles.versionTxt}>Version: 01.01.20.20</Text>
+        <Text style={styles.corporationTxt}>Odetunde Codes</Text>
+        <View
+          style={{
+            flexDirection: 'row',
+            gap: 5,
+            alignItems: 'center',
+            marginTop: 8,
+          }}
+        >
+          <Text style={{ fontSize: 10, fontWeight: '300' }}>Copyright</Text>
+          <AntDesign name="copyright" size={13} color="black" />
+          <Text style={{ fontSize: 10, fontWeight: '300' }}>2023</Text>
+        </View>
+      </View>
+      <View style={styles.privacyContainer}>
+        <Text style={styles.privacy}>Privacy & Cookies</Text>
+        <Text style={styles.privacy}>Terms of Use</Text>
       </View>
     </PageContainer>
   );
@@ -47,5 +65,26 @@ const styles = StyleSheet.create({
   aboutContainer: {
     alignItems: 'center',
     marginTop: 25,
+  },
+  versionTxt: {
+    fontWeight: 'bold',
+    fontSize: 12,
+    marginTop: 12,
+  },
+  corporationTxt: {
+    marginTop: 8,
+    fontWeight: '300',
+    fontSize: 12,
+  },
+  privacyContainer: {
+    borderTopWidth: 1,
+    marginTop: 30,
+    gap: 20,
+    paddingLeft: 8,
+  },
+  privacy: {
+    fontWeight: 'bold',
+    fontSize: 12,
+    marginTop: 12,
   },
 });

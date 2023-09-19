@@ -1,7 +1,6 @@
 import { StyleSheet } from 'react-native';
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import Dashboard from '../screens/Dashboard';
 import TabNavigator from './TabNavigator';
 import SettingsScreen from '../screens/SettingsScreen';
 import InstructorScreen from '../screens/InstructorScreen';
@@ -17,7 +16,7 @@ const AppStack = () => {
       drawerContent={(props) => <CustomDrawer {...props} />}
       screenOptions={{
         headerShown: false,
-        drawerActiveBackgroundColor: '#FFDB2D',
+        drawerActiveBackgroundColor: '#97C93F',
         drawerActiveTintColor: '#fff',
         drawerInactiveTintColor: '#333',
         drawerLabelStyle: {
